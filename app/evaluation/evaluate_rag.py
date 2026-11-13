@@ -354,8 +354,4 @@ print(
     "seconds"
 )
 
-print(
-    "P99:",
-    round(df["latency_seconds"].quantile(0.99), 3),
-    "seconds"
-)
+

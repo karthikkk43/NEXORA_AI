@@ -12,7 +12,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 3.022,
+    "latency_seconds": 3.281,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -21,7 +21,7 @@
   },
   {
     "user_input": "What is the approximate workforce size of NovaCore Technologies?",
-    "response": "The approximate workforce size of NovaCore Technologies is 420 employees.\n\nThis information is derived from the company information handbook, which states: \"NovaCore Technologies is a software and cloud engineering company that builds digital platforms, data products, and AI-powered enterprise solutions. The company serves customers in financial services, retail, logistics, education, and technology. Headquarters: Bengaluru, India Founded: 2019 Employees: Approximately 420 Primary business: Cloud platforms, data engineering, AI systems, and enterprise software\" [1][2].",
+    "response": "The approximate workforce size of NovaCore Technologies is 420 employees.\n\nReference: [1], [2]",
     "reference": "NovaCore Technologies employs approximately 420 people.",
     "retrieved_contexts": [
       "NovaCore Technologies - Internal Company Information Page 1 NovaCore Technologies Company Information Handbook NovaCore Technologies is a software and cloud engineering company that builds digital platforms, data products, and AI-powered enterprise solutions. The company serves customers in financial services, retail, logistics, education, and technology. Headquarters: Bengaluru, India Founded: 2019 Employees: Approximately 420 Primary business: Cloud platforms, data engineering, AI systems, and enterprise software 1. Company Mission and Values NovaCore's mission is to help organizations build reliable, secure, and useful digital products. The company emphasizes customer impact, engineering quality, responsible AI, continuous learning, clear communication, and operational ownership. 2. Departments Department Primary Responsibility Engineering Backend, frontend, platform engineering, reliability, and internal tools AI & Data Machine learning, LLM applications, analytics, data platforms, and evaluation Product Product strategy, research, requirements, and roadmap planning Sales Enterprise sales, partnerships, account growth, and customer relationships Customer Success Onboarding, sup",
@@ -32,7 +32,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.151,
+    "latency_seconds": 1.834,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -52,7 +52,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.172,
+    "latency_seconds": 1.959,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -72,7 +72,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.128,
+    "latency_seconds": 2.325,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -81,7 +81,7 @@
   },
   {
     "user_input": "What is the reported employee count at NovaCore Technologies?",
-    "response": "The reported employee count at NovaCore Technologies is approximately 420.\n\nSource: [1], [2]",
+    "response": "The reported employee count at NovaCore Technologies is approximately 420.\n\n**Source:** [1], [2]",
     "reference": "The reported employee count is approximately 420.",
     "retrieved_contexts": [
       "NovaCore Technologies - Internal Company Information Page 1 NovaCore Technologies Company Information Handbook NovaCore Technologies is a software and cloud engineering company that builds digital platforms, data products, and AI-powered enterprise solutions. The company serves customers in financial services, retail, logistics, education, and technology. Headquarters: Bengaluru, India Founded: 2019 Employees: Approximately 420 Primary business: Cloud platforms, data engineering, AI systems, and enterprise software 1. Company Mission and Values NovaCore's mission is to help organizations build reliable, secure, and useful digital products. The company emphasizes customer impact, engineering quality, responsible AI, continuous learning, clear communication, and operational ownership. 2. Departments Department Primary Responsibility Engineering Backend, frontend, platform engineering, reliability, and internal tools AI & Data Machine learning, LLM applications, analytics, data platforms, and evaluation Product Product strategy, research, requirements, and roadmap planning Sales Enterprise sales, partnerships, account growth, and customer relationships Customer Success Onboarding, sup",
@@ -92,7 +92,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 1.985,
+    "latency_seconds": 2.415,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -112,7 +112,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.119,
+    "latency_seconds": 2.213,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -132,7 +132,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.005,
+    "latency_seconds": 2.144,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -152,7 +152,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 1.929,
+    "latency_seconds": 2.196,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -172,7 +172,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.166,
+    "latency_seconds": 2.069,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -192,7 +192,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.185,
+    "latency_seconds": 2.467,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -201,12 +201,12 @@
   },
   {
     "user_input": "When was NovaCore Technologies founded?",
-    "response": "NovaCore Technologies was established in 2018 by Hannes Potgieter and Andre Rebb [1]. However, there is also a reference to a company named NOVACORE TECHNOLOGIES LTD incorporated on 14 May 2025 in the United Kingdom [2]. Additionally, NOVACORE TECHNOLOGIES INDIA PRIVATE LIMITED was incorporated on Jan 28, 2025 in India [3]. \n\nTherefore, the founding date of NovaCore Technologies, as per the provided snippets, is **2018**.\n\nWeb sources:\n[1] https://www.novacore.co.za\n[2] https://find-and-update.company-information.service.gov.uk/company/16449546\n[3] https://tracxn.com/d/legal-entities/india/novacore-technologies-india-private-limited/__W0zmTiQvKmbSl3sPWhEU7XN_90y1RjddAbJ7uwcrJ04\n[4] https://tavily.com/knowledge/company/j5rwNk08XnV5\n[5] https://www.prnewswire.com/news-releases/novacore-launches-to-transform-specialty-insurance-with-innovation-at-the-helm-302434036.html",
+    "response": "NovaCore Technologies was established in 2018 by Hannes Potgieter and Andre Rebb [1]. However, there is also a reference to a company named NOVACORE TECHNOLOGIES LTD incorporated on 14 May 2025 in the United Kingdom [2]. Additionally, NOVACORE TECHNOLOGIES INDIA PRIVATE LIMITED was incorporated on Jan 28, 2025 in India [3]. \n\nTherefore, the founding date of NovaCore Technologies, as per the provided snippets, is **2018**. The other incorporation dates refer to different legal entities under the NovaCore brand in various countries.\n\nWeb sources:\n[1] https://www.novacore.co.za\n[2] https://find-and-update.company-information.service.gov.uk/company/16449546\n[3] https://tracxn.com/d/legal-entities/india/novacore-technologies-india-private-limited/__W0zmTiQvKmbSl3sPWhEU7XN_90y1RjddAbJ7uwcrJ04\n[4] https://tavily.com/knowledge/company/j5rwNk08XnV5\n[5] https://www.prnewswire.com/news-releases/novacore-launches-to-transform-specialty-insurance-with-innovation-at-the-helm-302434036.html",
     "reference": "NovaCore Technologies was founded in 2019.",
     "retrieved_contexts": [],
     "intent": "web",
     "status": "web_answer",
-    "latency_seconds": 4.609,
+    "latency_seconds": 3.697,
     "kb_grade": {
       "relevant": false,
       "sufficient": false
@@ -215,7 +215,7 @@
   },
   {
     "user_input": "What is the founding year of NovaCore Technologies?",
-    "response": "The founding year of NovaCore Technologies is 2019 [1][2].",
+    "response": "The founding year of NovaCore Technologies is 2019[1][2].",
     "reference": "The company was founded in 2019.",
     "retrieved_contexts": [
       "NovaCore Technologies - Internal Company Information Page 1 NovaCore Technologies Company Information Handbook NovaCore Technologies is a software and cloud engineering company that builds digital platforms, data products, and AI-powered enterprise solutions. The company serves customers in financial services, retail, logistics, education, and technology. Headquarters: Bengaluru, India Founded: 2019 Employees: Approximately 420 Primary business: Cloud platforms, data engineering, AI systems, and enterprise software 1. Company Mission and Values NovaCore's mission is to help organizations build reliable, secure, and useful digital products. The company emphasizes customer impact, engineering quality, responsible AI, continuous learning, clear communication, and operational ownership. 2. Departments Department Primary Responsibility Engineering Backend, frontend, platform engineering, reliability, and internal tools AI & Data Machine learning, LLM applications, analytics, data platforms, and evaluation Product Product strategy, research, requirements, and roadmap planning Sales Enterprise sales, partnerships, account growth, and customer relationships Customer Success Onboarding, sup",
@@ -226,7 +226,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.356,
+    "latency_seconds": 2.168,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -235,7 +235,7 @@
   },
   {
     "user_input": "Was NovaCore Technologies established in 2019?",
-    "response": "Yes, NovaCore Technologies was established in 2019. According to the company information, \"Founded: 2019\" is listed under the company's basic details [1][2].",
+    "response": "Yes, NovaCore Technologies was established in 2019.\n\nAccording to the company information handbook, NovaCore Technologies was founded in 2019 [1][2].",
     "reference": "Yes, NovaCore Technologies was founded in 2019.",
     "retrieved_contexts": [
       "NovaCore Technologies - Internal Company Information Page 1 NovaCore Technologies Company Information Handbook NovaCore Technologies is a software and cloud engineering company that builds digital platforms, data products, and AI-powered enterprise solutions. The company serves customers in financial services, retail, logistics, education, and technology. Headquarters: Bengaluru, India Founded: 2019 Employees: Approximately 420 Primary business: Cloud platforms, data engineering, AI systems, and enterprise software 1. Company Mission and Values NovaCore's mission is to help organizations build reliable, secure, and useful digital products. The company emphasizes customer impact, engineering quality, responsible AI, continuous learning, clear communication, and operational ownership. 2. Departments Department Primary Responsibility Engineering Backend, frontend, platform engineering, reliability, and internal tools AI & Data Machine learning, LLM applications, analytics, data platforms, and evaluation Product Product strategy, research, requirements, and roadmap planning Sales Enterprise sales, partnerships, account growth, and customer relationships Customer Success Onboarding, sup",
@@ -246,7 +246,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.167,
+    "latency_seconds": 2.152,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -260,7 +260,7 @@
     "retrieved_contexts": [],
     "intent": "web",
     "status": "no_evidence",
-    "latency_seconds": 8.073,
+    "latency_seconds": 5.734,
     "kb_grade": {
       "relevant": false,
       "sufficient": false
@@ -280,7 +280,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.65,
+    "latency_seconds": 2.663,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -294,7 +294,7 @@
     "retrieved_contexts": [],
     "intent": "web",
     "status": "no_evidence",
-    "latency_seconds": 7.367,
+    "latency_seconds": 4.515,
     "kb_grade": {
       "relevant": false,
       "sufficient": false
@@ -314,7 +314,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 1.852,
+    "latency_seconds": 2.228,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -334,7 +334,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.256,
+    "latency_seconds": 2.677,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -343,7 +343,7 @@
   },
   {
     "user_input": "Does NovaCore Technologies provide cloud engineering solutions?",
-    "response": "Yes, NovaCore Technologies provides cloud engineering solutions. According to the company information, NovaCore Technologies is a software and cloud engineering company that builds digital platforms, data products, and AI-powered enterprise solutions [1]. The primary business areas listed include cloud platforms, data engineering, AI systems, and enterprise software [1]. This confirms that cloud engineering is part of their core offerings.",
+    "response": "Yes, NovaCore Technologies provides cloud engineering solutions. According to the company information, NovaCore Technologies is a software and cloud engineering company that builds digital platforms, data products, and AI-powered enterprise solutions [1]. The primary business includes cloud platforms, data engineering, AI systems, and enterprise software [1]. Therefore, cloud engineering solutions are part of their core offerings.",
     "reference": "Yes, cloud engineering and cloud platforms are among NovaCore Technologies' business areas.",
     "retrieved_contexts": [
       "NovaCore Technologies - Internal Company Information Page 1 NovaCore Technologies Company Information Handbook NovaCore Technologies is a software and cloud engineering company that builds digital platforms, data products, and AI-powered enterprise solutions. The company serves customers in financial services, retail, logistics, education, and technology. Headquarters: Bengaluru, India Founded: 2019 Employees: Approximately 420 Primary business: Cloud platforms, data engineering, AI systems, and enterprise software 1. Company Mission and Values NovaCore's mission is to help organizations build reliable, secure, and useful digital products. The company emphasizes customer impact, engineering quality, responsible AI, continuous learning, clear communication, and operational ownership. 2. Departments Department Primary Responsibility Engineering Backend, frontend, platform engineering, reliability, and internal tools AI & Data Machine learning, LLM applications, analytics, data platforms, and evaluation Product Product strategy, research, requirements, and roadmap planning Sales Enterprise sales, partnerships, account growth, and customer relationships Customer Success Onboarding, sup",
@@ -354,7 +354,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.181,
+    "latency_seconds": 1.955,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -363,7 +363,7 @@
   },
   {
     "user_input": "Summarize NovaCore Technologies using its founding year, location, and employee count.",
-    "response": "NovaCore Technologies was founded in 2019 and is headquartered in Bengaluru, India. The company has approximately 420 employees [1][2].",
+    "response": "Based on the provided excerpts, here is a summary of NovaCore Technologies using its founding year, location, and employee count:\n\n- **Founding Year**: NovaCore Technologies was founded in **2019** [1][2].\n- **Location**: The company is headquartered in **Bengaluru, India** [1][2].\n- **Employee Count**: NovaCore Technologies has approximately **420 employees** [1][2].",
     "reference": "NovaCore Technologies was founded in 2019, is headquartered in Bengaluru, India, and employs approximately 420 people.",
     "retrieved_contexts": [
       "NovaCore Technologies - Internal Company Information Page 1 NovaCore Technologies Company Information Handbook NovaCore Technologies is a software and cloud engineering company that builds digital platforms, data products, and AI-powered enterprise solutions. The company serves customers in financial services, retail, logistics, education, and technology. Headquarters: Bengaluru, India Founded: 2019 Employees: Approximately 420 Primary business: Cloud platforms, data engineering, AI systems, and enterprise software 1. Company Mission and Values NovaCore's mission is to help organizations build reliable, secure, and useful digital products. The company emphasizes customer impact, engineering quality, responsible AI, continuous learning, clear communication, and operational ownership. 2. Departments Department Primary Responsibility Engineering Backend, frontend, platform engineering, reliability, and internal tools AI & Data Machine learning, LLM applications, analytics, data platforms, and evaluation Product Product strategy, research, requirements, and roadmap planning Sales Enterprise sales, partnerships, account growth, and customer relationships Customer Success Onboarding, sup",
@@ -374,7 +374,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.107,
+    "latency_seconds": 2.448,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -394,7 +394,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.066,
+    "latency_seconds": 2.264,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -414,7 +414,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.001,
+    "latency_seconds": 2.445,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -423,7 +423,7 @@
   },
   {
     "user_input": "Does NovaCore Technologies provide 25 paid leave days per year?",
-    "response": "Yes, NovaCore Technologies provides 25 paid leave days per year for full-time employees [1][2]. \n\nThe policy states: \"Full-time employees receive 25 paid leave days per calendar year. Employees joining after July 1 receive a prorated allocation. Up to 5 unused leave days may be carried into the following year\" [1][2].",
+    "response": "Yes, NovaCore Technologies provides 25 paid leave days per year for full-time employees [1][2]. \n\nThe policy states that full-time employees receive 25 paid leave days per calendar year, with employees joining after July 1 receiving a prorated allocation [1][2]. Additionally, up to 5 unused leave days may be carried into the following year, and employees also receive 10 paid sick days each year [1][2]. Planned leave should be submitted through the HR portal at least 7 calendar days in advance and approved by the employee's direct manager [1][2].",
     "reference": "Yes, full-time employees receive 25 paid leave days per calendar year.",
     "retrieved_contexts": [
       "NovaCore Technologies - Internal Company Information Page 2 3. Employee Leave Policy Full-time employees receive 25 paid leave days per calendar year. Employees joining after July 1 receive a prorated allocation. Up to 5 unused leave days may be carried into the following year. Employees also receive 10 paid sick days each year. Planned leave should normally be submitted through the HR portal at least 7 calendar days in advance and approved by the employee's direct manager. 4. Learning and Development Engineering employees receive an annual learning budget of $1,500. AI and Data employees receive $2,000, while Sales employees receive $700. Approved expenses include courses, books, technical certifications, and professional conferences. 5. Remote Work Policy Employees may work remotely up to three days per week. Teams may designate common office days for collaboration. Fully remote arrangements require approval from both the department head and Human Resources. 6. Home Internet and Equipment Benefits All employees may expense up to $50 per month for work-related home internet. New full-time employees may request a one-time home-office equipment allowance of up to $600. 7. Engineerin",
@@ -434,7 +434,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.127,
+    "latency_seconds": 2.255,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -443,7 +443,7 @@
   },
   {
     "user_input": "How much annual paid leave is available to a full-time employee?",
-    "response": "According to the NovaCore Technologies Internal Company Information, full-time employees receive **25 paid leave days per calendar year** [1][2].",
+    "response": "According to the NovaCore Technologies Internal Company Information, full-time employees receive **25 paid leave days per calendar year** [1][2].\n\nAdditionally:\n- Employees joining after July 1 receive a prorated allocation of leave days.\n- Up to 5 unused leave days may be carried into the following year.\n- Employees also receive 10 paid sick days each year.\n- Planned leave should be submitted through the HR portal at least 7 calendar days in advance and approved by the employee's direct manager [1][2].",
     "reference": "A full-time NovaCore Technologies employee receives 25 paid leave days per calendar year.",
     "retrieved_contexts": [
       "NovaCore Technologies - Internal Company Information Page 2 3. Employee Leave Policy Full-time employees receive 25 paid leave days per calendar year. Employees joining after July 1 receive a prorated allocation. Up to 5 unused leave days may be carried into the following year. Employees also receive 10 paid sick days each year. Planned leave should normally be submitted through the HR portal at least 7 calendar days in advance and approved by the employee's direct manager. 4. Learning and Development Engineering employees receive an annual learning budget of $1,500. AI and Data employees receive $2,000, while Sales employees receive $700. Approved expenses include courses, books, technical certifications, and professional conferences. 5. Remote Work Policy Employees may work remotely up to three days per week. Teams may designate common office days for collaboration. Fully remote arrangements require approval from both the department head and Human Resources. 6. Home Internet and Equipment Benefits All employees may expense up to $50 per month for work-related home internet. New full-time employees may request a one-time home-office equipment allowance of up to $600. 7. Engineerin",
@@ -451,7 +451,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.593,
+    "latency_seconds": 2.66,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -471,7 +471,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.187,
+    "latency_seconds": 2.357,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -491,7 +491,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.006,
+    "latency_seconds": 2.143,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -500,7 +500,7 @@
   },
   {
     "user_input": "What is the yearly sick leave allowance?",
-    "response": "The company policy states that employees receive **10 paid sick days each year** [1][2].",
+    "response": "The yearly sick leave allowance for employees at NovaCore Technologies is **10 paid sick days each year** [1].",
     "reference": "Employees receive 10 paid sick days each year.",
     "retrieved_contexts": [
       "NovaCore Technologies - Internal Company Information Page 2 3. Employee Leave Policy Full-time employees receive 25 paid leave days per calendar year. Employees joining after July 1 receive a prorated allocation. Up to 5 unused leave days may be carried into the following year. Employees also receive 10 paid sick days each year. Planned leave should normally be submitted through the HR portal at least 7 calendar days in advance and approved by the employee's direct manager. 4. Learning and Development Engineering employees receive an annual learning budget of $1,500. AI and Data employees receive $2,000, while Sales employees receive $700. Approved expenses include courses, books, technical certifications, and professional conferences. 5. Remote Work Policy Employees may work remotely up to three days per week. Teams may designate common office days for collaboration. Fully remote arrangements require approval from both the department head and Human Resources. 6. Home Internet and Equipment Benefits All employees may expense up to $50 per month for work-related home internet. New full-time employees may request a one-time home-office equipment allowance of up to $600. 7. Engineerin",
@@ -508,7 +508,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.192,
+    "latency_seconds": 1.849,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -528,7 +528,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.318,
+    "latency_seconds": 2.107,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -547,7 +547,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 1.88,
+    "latency_seconds": 2.091,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -566,7 +566,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 1.741,
+    "latency_seconds": 1.932,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -583,7 +583,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 1.923,
+    "latency_seconds": 2.164,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -603,7 +603,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.071,
+    "latency_seconds": 2.233,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -612,7 +612,7 @@
   },
   {
     "user_input": "How many unused leave days can employees carry forward?",
-    "response": "According to the Employee Leave Policy, up to 5 unused leave days may be carried into the following year [1][2].",
+    "response": "Employees at NovaCore Technologies can carry forward up to 5 unused leave days into the following year [1].",
     "reference": "Employees can carry forward up to 5 unused leave days.",
     "retrieved_contexts": [
       "NovaCore Technologies - Internal Company Information Page 2 3. Employee Leave Policy Full-time employees receive 25 paid leave days per calendar year. Employees joining after July 1 receive a prorated allocation. Up to 5 unused leave days may be carried into the following year. Employees also receive 10 paid sick days each year. Planned leave should normally be submitted through the HR portal at least 7 calendar days in advance and approved by the employee's direct manager. 4. Learning and Development Engineering employees receive an annual learning budget of $1,500. AI and Data employees receive $2,000, while Sales employees receive $700. Approved expenses include courses, books, technical certifications, and professional conferences. 5. Remote Work Policy Employees may work remotely up to three days per week. Teams may designate common office days for collaboration. Fully remote arrangements require approval from both the department head and Human Resources. 6. Home Internet and Equipment Benefits All employees may expense up to $50 per month for work-related home internet. New full-time employees may request a one-time home-office equipment allowance of up to $600. 7. Engineerin",
@@ -620,7 +620,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.617,
+    "latency_seconds": 1.959,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -637,7 +637,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.227,
+    "latency_seconds": 2.67,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -646,7 +646,7 @@
   },
   {
     "user_input": "Explain the unused annual leave carryover policy.",
-    "response": "The unused annual leave carryover policy at NovaCore Technologies is as follows [1][2]:\n\n- **Carryover Limit**: Up to 5 unused leave days may be carried into the following year.\n- **Eligibility**: This applies to full-time employees who have received their annual leave allocation.\n- **Process**: Unused days up to the limit can be carried forward automatically; no additional action is required beyond normal leave usage and tracking.\n\nThis policy allows employees to retain a portion of their unused leave for the next calendar year, promoting work-life balance and recognizing employee loyalty.",
+    "response": "The unused annual leave carryover policy at NovaCore Technologies is as follows [1][2]:\n\n- **Carryover Limit**: Up to 5 unused leave days may be carried into the following year.\n- **Eligibility**: This applies to full-time employees who have received their annual leave allocation.\n- **Process**: Unused days up to the limit of 5 can be carried forward to the next calendar year.\n\nThis policy allows employees to retain a portion of their unused leave for use in the subsequent year, promoting work-life balance and recognizing employee planning efforts [1][2].",
     "reference": "Employees are permitted to carry over a maximum of 5 unused leave days into the next calendar year.",
     "retrieved_contexts": [
       "NovaCore Technologies - Internal Company Information Page 2 3. Employee Leave Policy Full-time employees receive 25 paid leave days per calendar year. Employees joining after July 1 receive a prorated allocation. Up to 5 unused leave days may be carried into the following year. Employees also receive 10 paid sick days each year. Planned leave should normally be submitted through the HR portal at least 7 calendar days in advance and approved by the employee's direct manager. 4. Learning and Development Engineering employees receive an annual learning budget of $1,500. AI and Data employees receive $2,000, while Sales employees receive $700. Approved expenses include courses, books, technical certifications, and professional conferences. 5. Remote Work Policy Employees may work remotely up to three days per week. Teams may designate common office days for collaboration. Fully remote arrangements require approval from both the department head and Human Resources. 6. Home Internet and Equipment Benefits All employees may expense up to $50 per month for work-related home internet. New full-time employees may request a one-time home-office equipment allowance of up to $600. 7. Engineerin",
@@ -656,7 +656,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.63,
+    "latency_seconds": 2.561,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -675,7 +675,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 1.895,
+    "latency_seconds": 2.046,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -684,7 +684,7 @@
   },
   {
     "user_input": "Which platform should NovaCore employees use to request leave?",
-    "response": "According to the provided excerpts, employees should use the HR portal to request leave. Specifically, the policy states: \"Planned leave should normally be submitted through the HR portal at least 7 calendar days in advance and approved by the employee's direct manager\" [1][2].",
+    "response": "According to the company information, employees should use the HR portal to request leave. Specifically, the policy states: \"Planned leave should normally be submitted through the HR portal at least 7 calendar days in advance and approved by the employee's direct manager\" [1][2].",
     "reference": "Employees should submit planned leave requests through the HR portal.",
     "retrieved_contexts": [
       "NovaCore Technologies - Internal Company Information Page 2 3. Employee Leave Policy Full-time employees receive 25 paid leave days per calendar year. Employees joining after July 1 receive a prorated allocation. Up to 5 unused leave days may be carried into the following year. Employees also receive 10 paid sick days each year. Planned leave should normally be submitted through the HR portal at least 7 calendar days in advance and approved by the employee's direct manager. 4. Learning and Development Engineering employees receive an annual learning budget of $1,500. AI and Data employees receive $2,000, while Sales employees receive $700. Approved expenses include courses, books, technical certifications, and professional conferences. 5. Remote Work Policy Employees may work remotely up to three days per week. Teams may designate common office days for collaboration. Fully remote arrangements require approval from both the department head and Human Resources. 6. Home Internet and Equipment Benefits All employees may expense up to $50 per month for work-related home internet. New full-time employees may request a one-time home-office equipment allowance of up to $600. 7. Engineerin",
@@ -695,7 +695,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.713,
+    "latency_seconds": 2.195,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -712,7 +712,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 1.881,
+    "latency_seconds": 1.963,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -732,7 +732,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.419,
+    "latency_seconds": 2.204,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -751,7 +751,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.151,
+    "latency_seconds": 2.019,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -760,7 +760,7 @@
   },
   {
     "user_input": "What is the standard notice period for planned leave?",
-    "response": "The standard notice period for planned leave is at least 7 calendar days in advance [1][2].\n\nAccording to the Employee Leave Policy, planned leave should normally be submitted through the HR portal at least 7 calendar days in advance and approved by the employee's direct manager [1][2].",
+    "response": "The standard notice period for planned leave is at least 7 calendar days in advance [1][2].\n\nThis is explicitly stated in the Employee Leave Policy section, which notes that planned leave should normally be submitted through the HR portal at least 7 calendar days in advance and approved by the employee's direct manager [1][2].",
     "reference": "The standard planned-leave notice period is at least 7 calendar days.",
     "retrieved_contexts": [
       "NovaCore Technologies - Internal Company Information Page 2 3. Employee Leave Policy Full-time employees receive 25 paid leave days per calendar year. Employees joining after July 1 receive a prorated allocation. Up to 5 unused leave days may be carried into the following year. Employees also receive 10 paid sick days each year. Planned leave should normally be submitted through the HR portal at least 7 calendar days in advance and approved by the employee's direct manager. 4. Learning and Development Engineering employees receive an annual learning budget of $1,500. AI and Data employees receive $2,000, while Sales employees receive $700. Approved expenses include courses, books, technical certifications, and professional conferences. 5. Remote Work Policy Employees may work remotely up to three days per week. Teams may designate common office days for collaboration. Fully remote arrangements require approval from both the department head and Human Resources. 6. Home Internet and Equipment Benefits All employees may expense up to $50 per month for work-related home internet. New full-time employees may request a one-time home-office equipment allowance of up to $600. 7. Engineerin",
@@ -771,7 +771,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.15,
+    "latency_seconds": 2.265,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -780,7 +780,7 @@
   },
   {
     "user_input": "Describe the complete process for requesting planned leave.",
-    "response": "Based on the provided excerpts, here is the process for requesting planned leave at NovaCore Technologies:\n\n- **Submission**: Planned leave should normally be submitted through the HR portal [1].\n- **Timing**: Submission must occur at least 7 calendar days in advance [1].\n- **Approval**: The request must be approved by the employee's direct manager [1].\n\nThese are the key steps outlined in the company information regarding the process for requesting planned leave.",
+    "response": "Based on the provided excerpts, here is the process for requesting planned leave at NovaCore Technologies:\n\n- **Submission**: Planned leave should normally be submitted through the HR portal [1][2].\n- **Timing**: Submission must occur at least 7 calendar days in advance [1][2].\n- **Approval**: The request must be approved by the employee's direct manager [1][2].\n\nThese are the key steps outlined in the company information regarding the leave request process.",
     "reference": "Employees should normally submit planned leave through the HR portal at least 7 calendar days in advance and obtain approval from their direct manager.",
     "retrieved_contexts": [
       "NovaCore Technologies - Internal Company Information Page 2 3. Employee Leave Policy Full-time employees receive 25 paid leave days per calendar year. Employees joining after July 1 receive a prorated allocation. Up to 5 unused leave days may be carried into the following year. Employees also receive 10 paid sick days each year. Planned leave should normally be submitted through the HR portal at least 7 calendar days in advance and approved by the employee's direct manager. 4. Learning and Development Engineering employees receive an annual learning budget of $1,500. AI and Data employees receive $2,000, while Sales employees receive $700. Approved expenses include courses, books, technical certifications, and professional conferences. 5. Remote Work Policy Employees may work remotely up to three days per week. Teams may designate common office days for collaboration. Fully remote arrangements require approval from both the department head and Human Resources. 6. Home Internet and Equipment Benefits All employees may expense up to $50 per month for work-related home internet. New full-time employees may request a one-time home-office equipment allowance of up to $600. 7. Engineerin",
@@ -788,7 +788,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.56,
+    "latency_seconds": 2.293,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -797,7 +797,7 @@
   },
   {
     "user_input": "What happens to annual leave allocation for employees joining after July 1?",
-    "response": "Employees joining after July 1 receive a prorated allocation of annual leave [1].",
+    "response": "Employees joining NovaCore Technologies after July 1 receive a prorated allocation of annual leave [1]. Specifically:\n\n- Full-time employees are entitled to 25 paid leave days per calendar year.\n- For those who join after July 1, the allocation is prorated based on the number of months remaining in the calendar year [1].\n\nAdditionally:\n- Up to 5 unused leave days may be carried into the following year.\n- Employees also receive 10 paid sick days each year, regardless of their start date [1]. \n\nPlanned leave must be submitted through the HR portal at least 7 calendar days in advance and approved by the employee's direct manager [1].",
     "reference": "Employees joining after July 1 receive a prorated allocation of annual paid leave.",
     "retrieved_contexts": [
       "NovaCore Technologies - Internal Company Information Page 2 3. Employee Leave Policy Full-time employees receive 25 paid leave days per calendar year. Employees joining after July 1 receive a prorated allocation. Up to 5 unused leave days may be carried into the following year. Employees also receive 10 paid sick days each year. Planned leave should normally be submitted through the HR portal at least 7 calendar days in advance and approved by the employee's direct manager. 4. Learning and Development Engineering employees receive an annual learning budget of $1,500. AI and Data employees receive $2,000, while Sales employees receive $700. Approved expenses include courses, books, technical certifications, and professional conferences. 5. Remote Work Policy Employees may work remotely up to three days per week. Teams may designate common office days for collaboration. Fully remote arrangements require approval from both the department head and Human Resources. 6. Home Internet and Equipment Benefits All employees may expense up to $50 per month for work-related home internet. New full-time employees may request a one-time home-office equipment allowance of up to $600. 7. Engineerin",
@@ -805,7 +805,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 1.736,
+    "latency_seconds": 2.622,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -814,7 +814,7 @@
   },
   {
     "user_input": "Does NovaCore Technologies prorate annual leave for midyear joiners?",
-    "response": "Yes, NovaCore Technologies prorates annual leave for employees who join after July 1. According to the Employee Leave Policy, full-time employees receive 25 paid leave days per calendar year, and those joining after July 1 receive a prorated allocation [1][2].",
+    "response": "Yes, NovaCore Technologies prorates annual leave for employees who join after July 1. According to the Employee Leave Policy:\n\n\"Employees joining after July 1 receive a prorated allocation\" [1][2].\n\nThis means that employees who start their employment after the beginning of the calendar year will receive a proportional amount of the standard 25 paid leave days based on the portion of the year they are employed.",
     "reference": "Yes, employees joining after July 1 receive a prorated annual leave allocation.",
     "retrieved_contexts": [
       "NovaCore Technologies - Internal Company Information Page 2 3. Employee Leave Policy Full-time employees receive 25 paid leave days per calendar year. Employees joining after July 1 receive a prorated allocation. Up to 5 unused leave days may be carried into the following year. Employees also receive 10 paid sick days each year. Planned leave should normally be submitted through the HR portal at least 7 calendar days in advance and approved by the employee's direct manager. 4. Learning and Development Engineering employees receive an annual learning budget of $1,500. AI and Data employees receive $2,000, while Sales employees receive $700. Approved expenses include courses, books, technical certifications, and professional conferences. 5. Remote Work Policy Employees may work remotely up to three days per week. Teams may designate common office days for collaboration. Fully remote arrangements require approval from both the department head and Human Resources. 6. Home Internet and Equipment Benefits All employees may expense up to $50 per month for work-related home internet. New full-time employees may request a one-time home-office equipment allowance of up to $600. 7. Engineerin",
@@ -825,7 +825,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.053,
+    "latency_seconds": 2.666,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -834,7 +834,7 @@
   },
   {
     "user_input": "Is the full annual leave allocation guaranteed for employees joining after July 1?",
-    "response": "Based on the provided excerpts, employees joining after July 1 receive a prorated allocation of the full annual leave, rather than the full annual leave allocation [1][2]. Specifically:\n\n- Full-time employees receive **25 paid leave days per calendar year**.\n- Employees joining **after July 1** receive a **prorated allocation** of these leave days.\n\nThus, the full annual leave allocation is **not** guaranteed for employees joining after July 1; instead, they receive a prorated amount based on their start date.",
+    "response": "Based on the provided excerpts, employees joining after July 1 receive a prorated allocation of the full annual leave, rather than the full allocation [1]. Specifically:\n\n- Full-time employees receive **25 paid leave days per calendar year**.\n- Employees joining **after July 1** receive a **prorated allocation** of these leave days [1].\n\nThus, the full annual leave allocation is **not** guaranteed for employees joining after July 1; instead, they receive a prorated amount based on their start date.",
     "reference": "Employees joining after July 1 receive a prorated allocation rather than the standard full-year allocation.",
     "retrieved_contexts": [
       "NovaCore Technologies - Internal Company Information Page 2 3. Employee Leave Policy Full-time employees receive 25 paid leave days per calendar year. Employees joining after July 1 receive a prorated allocation. Up to 5 unused leave days may be carried into the following year. Employees also receive 10 paid sick days each year. Planned leave should normally be submitted through the HR portal at least 7 calendar days in advance and approved by the employee's direct manager. 4. Learning and Development Engineering employees receive an annual learning budget of $1,500. AI and Data employees receive $2,000, while Sales employees receive $700. Approved expenses include courses, books, technical certifications, and professional conferences. 5. Remote Work Policy Employees may work remotely up to three days per week. Teams may designate common office days for collaboration. Fully remote arrangements require approval from both the department head and Human Resources. 6. Home Internet and Equipment Benefits All employees may expense up to $50 per month for work-related home internet. New full-time employees may request a one-time home-office equipment allowance of up to $600. 7. Engineerin",
@@ -842,7 +842,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.258,
+    "latency_seconds": 2.32,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -851,7 +851,7 @@
   },
   {
     "user_input": "Summarize NovaCore Technologies' employee leave policy.",
-    "response": "NovaCore Technologies' employee leave policy includes the following key points [1][2]:\n\n1. **Paid Leave Days**: Full-time employees receive 25 paid leave days per calendar year [1][2].\n2. **Prorated Allocation**: Employees joining after July 1 receive a prorated allocation of leave days [1][2].\n3. **Carryover**: Up to 5 unused leave days may be carried into the following year [1][2].\n4. **Paid Sick Days**: Employees also receive 10 paid sick days each year [1][2].\n5. **Leave Submission**: Planned leave should normally be submitted through the HR portal at least 7 calendar days in advance and approved by the employee's direct manager [1][2].",
+    "response": "NovaCore Technologies' employee leave policy includes the following key points [1][2]:\n\n1. **Paid Leave Days**: Full-time employees receive **25 paid leave days** per calendar year [1][2].\n2. **Prorated Allocation**: Employees who join after July 1 receive a **prorated allocation** of leave days [1][2].\n3. **Carryover**: Up to **5 unused leave days** may be carried into the following year [1][2].\n4. **Paid Sick Days**: Employees also receive **10 paid sick days** each year [1][2].\n5. **Leave Submission**: Planned leave should normally be submitted through the **HR portal at least 7 calendar days in advance** and approved by the employee's **direct manager** [1][2].",
     "reference": "Full-time employees receive 25 paid leave days per calendar year and 10 paid sick days. Up to 5 unused leave days may be carried into the following year. Employees joining after July 1 receive prorated annual leave. Planned leave should normally be requested through the HR portal at least 7 calendar days in advance and approved by the direct manager.",
     "retrieved_contexts": [
       "NovaCore Technologies - Internal Company Information Page 2 3. Employee Leave Policy Full-time employees receive 25 paid leave days per calendar year. Employees joining after July 1 receive a prorated allocation. Up to 5 unused leave days may be carried into the following year. Employees also receive 10 paid sick days each year. Planned leave should normally be submitted through the HR portal at least 7 calendar days in advance and approved by the employee's direct manager. 4. Learning and Development Engineering employees receive an annual learning budget of $1,500. AI and Data employees receive $2,000, while Sales employees receive $700. Approved expenses include courses, books, technical certifications, and professional conferences. 5. Remote Work Policy Employees may work remotely up to three days per week. Teams may designate common office days for collaboration. Fully remote arrangements require approval from both the department head and Human Resources. 6. Home Internet and Equipment Benefits All employees may expense up to $50 per month for work-related home internet. New full-time employees may request a one-time home-office equipment allowance of up to $600. 7. Engineerin",
@@ -862,7 +862,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 8.082,
+    "latency_seconds": 2.576,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -871,7 +871,7 @@
   },
   {
     "user_input": "What are the annual leave and sick leave entitlements for employees?",
-    "response": "The annual leave and sick leave entitlements for employees at NovaCore Technologies are as follows:\n\n- **Annual Leave**: Full-time employees receive **25 paid leave days per calendar year**. Employees joining after July 1 receive a prorated allocation, and up to **5 unused leave days may be carried into the following year**[1][2].\n  \n- **Sick Leave**: Employees receive **10 paid sick days each year**[1][2]. \n\nPlanned leave should normally be submitted through the HR portal at least **7 calendar days in advance** and approved by the employee's direct manager[1][2].",
+    "response": "The annual leave and sick leave entitlements for employees at NovaCore Technologies are as follows:\n\n- **Annual Leave**: Full-time employees receive **25 paid leave days per calendar year**. Employees joining after July 1 receive a prorated allocation, and up to **5 unused leave days may be carried into the following year**[1][2].\n  \n- **Sick Leave**: Employees receive **10 paid sick days each year**[1][2].\n\nPlanned leave should normally be submitted through the HR portal at least **7 calendar days in advance** and approved by the employee's direct manager[1][2].",
     "reference": "Full-time employees receive 25 annual paid leave days, and employees receive 10 paid sick days each year.",
     "retrieved_contexts": [
       "NovaCore Technologies - Internal Company Information Page 2 3. Employee Leave Policy Full-time employees receive 25 paid leave days per calendar year. Employees joining after July 1 receive a prorated allocation. Up to 5 unused leave days may be carried into the following year. Employees also receive 10 paid sick days each year. Planned leave should normally be submitted through the HR portal at least 7 calendar days in advance and approved by the employee's direct manager. 4. Learning and Development Engineering employees receive an annual learning budget of $1,500. AI and Data employees receive $2,000, while Sales employees receive $700. Approved expenses include courses, books, technical certifications, and professional conferences. 5. Remote Work Policy Employees may work remotely up to three days per week. Teams may designate common office days for collaboration. Fully remote arrangements require approval from both the department head and Human Resources. 6. Home Internet and Equipment Benefits All employees may expense up to $50 per month for work-related home internet. New full-time employees may request a one-time home-office equipment allowance of up to $600. 7. Engineerin",
@@ -881,7 +881,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.458,
+    "latency_seconds": 1.968,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -900,7 +900,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.254,
+    "latency_seconds": 2.35,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -909,7 +909,7 @@
   },
   {
     "user_input": "What should a new employee know about paid leave at NovaCore?",
-    "response": "A new employee at NovaCore should know the following about paid leave [1][2]:\n\n- **Annual Paid Leave**: Full-time employees receive 25 paid leave days per calendar year [1][2].\n- **Prorated Allocation**: Employees joining after July 1 receive a prorated allocation of paid leave [1][2].\n- **Carryover**: Up to 5 unused leave days may be carried into the following year [1][2].\n- **Paid Sick Days**: Employees also receive 10 paid sick days each year [1][2].\n- **Leave Submission**: Planned leave should normally be submitted through the HR portal at least 7 calendar days in advance and approved by the employee's direct manager [1][2].\n\nThese policies ensure that employees can plan their time off effectively while adhering to company guidelines.",
+    "response": "A new employee at NovaCore should know the following about paid leave [1][2]:\n\n- **Annual Paid Leave**: Full-time employees receive 25 paid leave days per calendar year [1][2].\n- **Prorated Allocation**: Employees joining after July 1 receive a prorated allocation of paid leave [1][2].\n- **Carryover**: Up to 5 unused leave days may be carried into the following year [1][2].\n- **Paid Sick Days**: Employees also receive 10 paid sick days each year [1][2].\n- **Leave Request Process**: Planned leave should normally be submitted through the HR portal at least 7 calendar days in advance and approved by the employee's direct manager [1][2].",
     "reference": "Full-time employees receive 25 paid annual leave days, while employees joining after July 1 receive a prorated allocation. Planned leave normally requires advance submission through the HR portal and direct manager approval.",
     "retrieved_contexts": [
       "NovaCore Technologies - Internal Company Information Page 2 3. Employee Leave Policy Full-time employees receive 25 paid leave days per calendar year. Employees joining after July 1 receive a prorated allocation. Up to 5 unused leave days may be carried into the following year. Employees also receive 10 paid sick days each year. Planned leave should normally be submitted through the HR portal at least 7 calendar days in advance and approved by the employee's direct manager. 4. Learning and Development Engineering employees receive an annual learning budget of $1,500. AI and Data employees receive $2,000, while Sales employees receive $700. Approved expenses include courses, books, technical certifications, and professional conferences. 5. Remote Work Policy Employees may work remotely up to three days per week. Teams may designate common office days for collaboration. Fully remote arrangements require approval from both the department head and Human Resources. 6. Home Internet and Equipment Benefits All employees may expense up to $50 per month for work-related home internet. New full-time employees may request a one-time home-office equipment allowance of up to $600. 7. Engineerin",
@@ -920,7 +920,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.97,
+    "latency_seconds": 2.275,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
@@ -929,7 +929,7 @@
   },
   {
     "user_input": "What are the leave benefits and approval requirements at NovaCore Technologies?",
-    "response": "NovaCore Technologies provides the following leave benefits and approval requirements for its employees:\n\n### Leave Benefits\n- **Paid Leave Days**: Full-time employees receive **25 paid leave days** per calendar year [1][2].\n- **Prorated Allocation**: Employees joining after July 1 receive a **prorated allocation** of leave days [1][2].\n- **Carryover**: Up to **5 unused leave days** may be carried into the following year [1][2].\n- **Paid Sick Days**: Employees receive **10 paid sick days** each year [1][2].\n\n### Approval Requirements\n- **Submission**: Planned leave should normally be submitted through the **HR portal** at least **7 calendar days** in advance [1][2].\n- **Approval**: Leave requests must be approved by the **employee's direct manager** [1][2].\n\nThese policies ensure that employees have a clear framework for managing their leave and understand the necessary steps for approval.",
+    "response": "At NovaCore Technologies, the leave benefits and approval requirements are as follows:\n\n### Leave Benefits [1][2]\n- **Paid Leave**: Full-time employees receive **25 paid leave days** per calendar year.\n- **Prorated Allocation**: Employees joining after July 1 receive a prorated allocation of leave days.\n- **Carryover**: Up to **5 unused leave days** may be carried into the following year.\n- **Paid Sick Days**: Employees receive **10 paid sick days** each year.\n\n### Approval Requirements [1][2]\n- **Submission**: Planned leave should normally be submitted through the **HR portal** at least **7 calendar days** in advance.\n- **Approval**: Leave requests must be approved by the **employee's direct manager**.\n\nThese policies ensure that employees have clear guidelines for managing their leave and understand the necessary steps for approval.",
     "reference": "Full-time employees receive 25 paid annual leave days and employees receive 10 paid sick days. Up to 5 unused leave days may carry over. Planned leave should normally be submitted through the HR portal at least 7 calendar days ahead and approved by the direct manager.",
     "retrieved_contexts": [
       "NovaCore Technologies - Internal Company Information Page 2 3. Employee Leave Policy Full-time employees receive 25 paid leave days per calendar year. Employees joining after July 1 receive a prorated allocation. Up to 5 unused leave days may be carried into the following year. Employees also receive 10 paid sick days each year. Planned leave should normally be submitted through the HR portal at least 7 calendar days in advance and approved by the employee's direct manager. 4. Learning and Development Engineering employees receive an annual learning budget of $1,500. AI and Data employees receive $2,000, while Sales employees receive $700. Approved expenses include courses, books, technical certifications, and professional conferences. 5. Remote Work Policy Employees may work remotely up to three days per week. Teams may designate common office days for collaboration. Fully remote arrangements require approval from both the department head and Human Resources. 6. Home Internet and Equipment Benefits All employees may expense up to $50 per month for work-related home internet. New full-time employees may request a one-time home-office equipment allowance of up to $600. 7. Engineerin",
@@ -940,7 +940,7 @@
     ],
     "intent": "kb",
     "status": "answered",
-    "latency_seconds": 2.664,
+    "latency_seconds": 3.256,
     "kb_grade": {
       "relevant": true,
       "sufficient": true
