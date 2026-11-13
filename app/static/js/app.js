@@ -9,9 +9,40 @@ const $ = (id) => document.getElementById(id);
 
 const STORAGE_KEY = "nexora_conversation_id";
 
+// ============================================
+// 1. UUID GENERATOR — HTTP + HTTPS
+// ============================================
+
+function generateUUID() {
+    if (
+        typeof crypto !== "undefined" &&
+        typeof crypto.randomUUID === "function"
+    ) {
+        return crypto.randomUUID();
+    }
+
+    const bytes = new Uint8Array(16);
+    crypto.getRandomValues(bytes);
+
+    bytes[6] = (bytes[6] & 0x0f) | 0x40;
+    bytes[8] = (bytes[8] & 0x3f) | 0x80;
+
+    const hex = Array.from(bytes, b =>
+        b.toString(16).padStart(2, "0")
+    ).join("");
+
+    return [
+        hex.slice(0, 8),
+        hex.slice(8, 12),
+        hex.slice(12, 16),
+        hex.slice(16, 20),
+        hex.slice(20)
+    ].join("-");
+}
+
 let conversationId =
     sessionStorage.getItem(STORAGE_KEY) ||
-    crypto.randomUUID();
+    generateUUID();
 
 sessionStorage.setItem(STORAGE_KEY, conversationId);
 
@@ -19,9 +50,8 @@ let chatBusy = false;
 let uploadBusy = false;
 let toastTimer;
 
-
 // ============================================
-// 1. NOTIFICATIONS
+// 2. NOTIFICATIONS
 // ============================================
 
 function toast(message) {
@@ -42,9 +72,8 @@ function toast(message) {
     }, 4500);
 }
 
-
 // ============================================
-// 2. FASTAPI REQUEST HELPER
+// 3. FASTAPI REQUEST HELPER
 // ============================================
 
 async function api(path, options = {}) {
@@ -76,15 +105,14 @@ async function api(path, options = {}) {
     return data;
 }
 
-
 // ============================================
-// 3. SIDEBAR NAVIGATION
+// 4. SIDEBAR NAVIGATION
 // ============================================
 
 function view(name) {
     const tabs = ["chat", "docs", "approval", "admin"];
 
-    tabs.forEach((tab) => {
+    tabs.forEach(tab => {
         $(tab + "View").classList.toggle(
             "hidden",
             tab !== name
@@ -125,9 +153,8 @@ $("adminTab").onclick = () => view("admin");
 
 $("refreshApprovals").onclick = loadApprovals;
 
-
 // ============================================
-// 4. CHAT WELCOME SCREEN
+// 5. CHAT WELCOME SCREEN
 // ============================================
 
 function showHero(show) {
@@ -138,13 +165,12 @@ function showHero(show) {
     }
 }
 
-
 // ============================================
-// 5. NEW CONVERSATION
+// 6. NEW CONVERSATION
 // ============================================
 
 $("newChat").onclick = () => {
-    conversationId = crypto.randomUUID();
+    conversationId = generateUUID();
 
     sessionStorage.setItem(
         STORAGE_KEY,
@@ -159,9 +185,8 @@ $("newChat").onclick = () => {
     toast("New conversation started");
 };
 
-
 // ============================================
-// 6. DISPLAY CHAT MESSAGES
+// 7. DISPLAY CHAT MESSAGES
 // ============================================
 
 function addMessage(content, kind, sources = []) {
@@ -172,7 +197,6 @@ function addMessage(content, kind, sources = []) {
 
     if (Array.isArray(sources) && sources.length) {
         const wrapper = document.createElement("div");
-
         wrapper.className = "sources";
 
         sources.forEach((source, index) => {
@@ -190,8 +214,7 @@ function addMessage(content, kind, sources = []) {
                     ? ` — page ${source.page}`
                     : "");
 
-            excerpt.textContent =
-                source.excerpt || "";
+            excerpt.textContent = source.excerpt || "";
 
             details.append(summary, excerpt);
             wrapper.append(details);
@@ -220,7 +243,6 @@ function addMessage(content, kind, sources = []) {
                     "✓ Feedback saved";
 
                 toast("Feedback saved");
-
             } catch (error) {
                 toast(error.message);
             }
@@ -237,9 +259,8 @@ function addMessage(content, kind, sources = []) {
     return element;
 }
 
-
 // ============================================
-// 7. SEND MESSAGE TO AGENTIC RAG
+// 8. SEND MESSAGE TO AGENTIC RAG
 // ============================================
 
 $("chatForm").onsubmit = async (event) => {
@@ -256,6 +277,7 @@ $("chatForm").onsubmit = async (event) => {
     }
 
     const requestConversationId = conversationId;
+
     const sendButton =
         $("chatForm").querySelector(
             'button[type="submit"]'
@@ -285,7 +307,7 @@ $("chatForm").onsubmit = async (event) => {
 
         loading.remove();
 
-        // Ignore stale results if a new chat was started.
+        // Ignore responses from an old conversation.
         if (requestConversationId !== conversationId) {
             return;
         }
@@ -337,13 +359,12 @@ $("chatForm").onsubmit = async (event) => {
     }
 };
 
-
 // ============================================
-// 8. SUGGESTED QUESTIONS
+// 9. SUGGESTED QUESTIONS
 // ============================================
 
 document.querySelectorAll("[data-q]").forEach(
-    (button) => {
+    button => {
         button.onclick = () => {
             $("question").value = button.dataset.q;
             $("question").focus();
@@ -351,9 +372,8 @@ document.querySelectorAll("[data-q]").forEach(
     }
 );
 
-
 // ============================================
-// 9. LOAD DOCUMENTS
+// 10. LOAD DOCUMENTS
 // ============================================
 
 async function loadDocs() {
@@ -374,7 +394,7 @@ async function loadDocs() {
             return;
         }
 
-        documents.forEach((doc) => {
+        documents.forEach(doc => {
             const row =
                 document.createElement("div");
 
@@ -396,9 +416,8 @@ async function loadDocs() {
     }
 }
 
-
 // ============================================
-// 10. UPLOAD TO AMAZON S3
+// 11. UPLOAD TO AMAZON S3
 // ============================================
 
 $("uploadForm").onsubmit = async (event) => {
@@ -438,7 +457,8 @@ $("uploadForm").onsubmit = async (event) => {
     uploadButton.textContent = "Preparing upload...";
 
     try {
-        // STEP 1: Generate S3 presigned URL
+        // STEP 1: Generate an S3 presigned URL.
+
         const result = await api(
             "/api/documents/uploads",
             {
@@ -449,8 +469,10 @@ $("uploadForm").onsubmit = async (event) => {
             }
         );
 
-        // STEP 2: Upload directly to S3
-        uploadButton.textContent = "Uploading to S3...";
+        // STEP 2: Upload file directly to S3.
+
+        uploadButton.textContent =
+            "Uploading to S3...";
 
         const uploadResponse = await fetch(
             result.upload_url,
@@ -468,8 +490,9 @@ $("uploadForm").onsubmit = async (event) => {
             const errorText =
                 await uploadResponse.text();
 
-            // Do not log the presigned URL:
-            // it contains temporary authorization.
+            // Do not log the presigned URL.
+            // It contains temporary authorization.
+
             console.error("S3 upload error:", {
                 status: uploadResponse.status,
                 response: errorText
@@ -498,7 +521,8 @@ $("uploadForm").onsubmit = async (event) => {
 
         toast("File uploaded to S3");
 
-        // STEP 3: Process document
+        // STEP 3: Process and index the document.
+
         uploadButton.textContent =
             "Processing document...";
 
@@ -536,16 +560,15 @@ $("uploadForm").onsubmit = async (event) => {
 
     } finally {
         uploadBusy = false;
-
         uploadButton.disabled = false;
+
         uploadButton.textContent =
             "Upload Document ↗";
     }
 };
 
-
 // ============================================
-// 11. LOAD WORKSPACE METRICS
+// 12. LOAD WORKSPACE METRICS
 // ============================================
 
 async function loadMetrics() {
@@ -580,9 +603,8 @@ async function loadMetrics() {
     }
 }
 
-
 // ============================================
-// 12. LOAD HUMAN APPROVALS
+// 13. LOAD HUMAN APPROVALS
 // ============================================
 
 async function loadApprovals() {
@@ -599,8 +621,7 @@ async function loadApprovals() {
                 : [];
 
         const pending = approvals.filter(
-            (approval) =>
-                approval.status === "pending"
+            approval => approval.status === "pending"
         ).length;
 
         $("approvalSummary").textContent =
@@ -615,7 +636,7 @@ async function loadApprovals() {
             return;
         }
 
-        approvals.forEach((approval) => {
+        approvals.forEach(approval => {
             const card =
                 document.createElement("article");
 
@@ -629,8 +650,7 @@ async function loadApprovals() {
             const title =
                 document.createElement("strong");
 
-            title.textContent =
-                approval.question;
+            title.textContent = approval.question;
 
             const badge =
                 document.createElement("span");
@@ -639,8 +659,7 @@ async function loadApprovals() {
                 "approval-status " +
                 approval.status;
 
-            badge.textContent =
-                approval.status;
+            badge.textContent = approval.status;
 
             header.append(title, badge);
             card.append(header);
@@ -661,8 +680,7 @@ async function loadApprovals() {
                 const actions =
                     document.createElement("div");
 
-                actions.className =
-                    "approval-actions";
+                actions.className = "approval-actions";
 
                 [
                     ["Approve", true],
@@ -750,9 +768,8 @@ async function loadApprovals() {
     }
 }
 
-
 // ============================================
-// 13. RESTORE CONVERSATION HISTORY
+// 14. RESTORE CONVERSATION HISTORY
 // ============================================
 
 async function restoreConversation() {
@@ -769,9 +786,10 @@ async function restoreConversation() {
         }
 
         $("messages").replaceChildren();
+
         showHero(false);
 
-        messages.forEach((message) => {
+        messages.forEach(message => {
             addMessage(
                 message.content,
                 message.role === "user"
@@ -788,9 +806,8 @@ async function restoreConversation() {
     }
 }
 
-
 // ============================================
-// 14. INITIALIZE FRONTEND
+// 15. INITIALIZE FRONTEND
 // ============================================
 
 document.addEventListener("DOMContentLoaded", () => {
