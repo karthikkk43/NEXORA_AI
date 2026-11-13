@@ -1,5 +1,4 @@
 
-
 name: Nexora AI CI/CD - AWS ECR
 
 on:
@@ -12,7 +11,7 @@ permissions:
   contents: read
 
 env:
-  AWS_REGION: us-east-1
+  AWS_REGION: us-east-2
   ECR_REPOSITORY: nexora
 
 jobs:
@@ -21,10 +20,10 @@ jobs:
     environment: production
 
     runs-on: [self-hosted, Linux, X64]
-
     timeout-minutes: 30
+
     steps:
-      # 1. Checkout repository
+      # 1. Checkout source code
       - name: Checkout Repository
         uses: actions/checkout@v4
 
@@ -50,7 +49,7 @@ jobs:
         run: |
           python -c "from app.graph import graph; print('LangGraph OK')"
 
-      # 6. Test guardrails
+      # 6. Test input guardrails
       - name: Test Input Guardrails
         run: |
           python - <<'PY'
@@ -69,11 +68,12 @@ jobs:
           print("Guardrail tests passed")
           PY
 
-      # 7. Validate ECR repository
+      # 7. Validate ECR configuration
       - name: Validate ECR Configuration
         run: |
           test -n "$ECR_REPOSITORY"
           echo "ECR repository: $ECR_REPOSITORY"
+          echo "AWS region: $AWS_REGION"
 
       # 8. Check Dockerfile
       - name: Check Dockerfile
@@ -91,7 +91,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
 
-      # 10. Verify AWS credentials
+      # 10. Verify AWS identity
       - name: Check AWS Identity
         run: |
           aws sts get-caller-identity
@@ -108,7 +108,6 @@ jobs:
           IMAGE_TAG: ${{ github.sha }}
         run: |
           IMAGE="$REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
-
           docker build -t "$IMAGE" .
           docker tag "$IMAGE" "$REGISTRY/$ECR_REPOSITORY:latest"
 
