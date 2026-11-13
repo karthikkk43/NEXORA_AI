@@ -1,4 +1,5 @@
 
+
 name: Nexora AI CI/CD - AWS ECR
 
 on:
@@ -23,28 +24,28 @@ jobs:
     timeout-minutes: 30
 
     steps:
-      # 1. Checkout source code
+      # 1. Checkout repository
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # 2. Set up Python
+      # 2. Setup Python
       - name: Setup Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      # 3. Install requirements
+      # 3. Install dependencies
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          python -m pip install -r requirements.txt
 
-      # 4. Validate Python files
+      # 4. Check Python syntax
       - name: Check Python Syntax
         run: |
           python -m compileall -q app worker scripts
 
-      # 5. Validate Agentic RAG
+      # 5. Validate LangGraph
       - name: Validate LangGraph
         run: |
           python -c "from app.graph import graph; print('LangGraph OK')"
@@ -68,17 +69,13 @@ jobs:
           print("Guardrail tests passed")
           PY
 
-      # 7. Validate ECR variable
+      # 7. Validate ECR repository
       - name: Validate ECR Configuration
         run: |
-          if [ -z "$ECR_REPOSITORY" ]; then
-            echo "ECR_REPOSITORY variable is missing"
-            exit 1
-          fi
+          test -n "$ECR_REPOSITORY"
+          echo "ECR repository: $ECR_REPOSITORY"
 
-          echo "ECR repository configured"
-
-      # 8. Verify Dockerfile
+      # 8. Check Dockerfile
       - name: Check Dockerfile
         run: |
           test -f Dockerfile || {
@@ -86,18 +83,26 @@ jobs:
             exit 1
           }
 
-      # 9. Verify EC2 IAM permissions
+      # 9. Configure AWS credentials
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      # 10. Verify AWS credentials
       - name: Check AWS Identity
         run: |
           aws sts get-caller-identity
 
-      # 10. Login to Amazon ECR
+      # 11. Login to Amazon ECR
       - name: Login to Amazon ECR
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v2
 
-      # 11. Build and push Docker image
-      - name: Build and Push Docker Image
+      # 12. Build Docker image
+      - name: Build Docker Image
         env:
           REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           IMAGE_TAG: ${{ github.sha }}
@@ -105,7 +110,15 @@ jobs:
           IMAGE="$REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
 
           docker build -t "$IMAGE" .
-          docker push "$IMAGE"
+          docker tag "$IMAGE" "$REGISTRY/$ECR_REPOSITORY:latest"
 
-          echo "Docker image pushed to ECR"
-          echo "Image: $IMAGE"
+      # 13. Push Docker image to ECR
+      - name: Push Docker Image to ECR
+        env:
+          REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          docker push "$REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
+          docker push "$REGISTRY/$ECR_REPOSITORY:latest"
+
+          echo "Successfully pushed Nexora AI to ECR!"
