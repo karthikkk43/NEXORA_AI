@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nexora AI | Enterprise Knowledge</title>
+
+    <link rel="stylesheet" href="/static/css/styles.css?v=20">
+</head>
+
+<body>
+
+<div class="shell">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-symbol">✦</div>
+            <div class="brand-info">
+                <div class="brand-name">NEXORA<span>AI</span></div>
+                <div class="brand-caption">ENTERPRISE INTELLIGENCE</div>
+            </div>
+        </div>
+
+        <div class="sidebar-label">WORKSPACE</div>
+
+        <nav class="navigation">
+
+            <button class="nav active" id="chatTab" type="button">
+                <span class="nav-icon">◈</span>
+                <span>Knowledge Chat</span>
+            </button>
+
+            <button class="nav" id="docsTab" type="button">
+                <span class="nav-icon">▤</span>
+                <span>Documents</span>
+            </button>
+
+            <button class="nav" id="approvalTab" type="button">
+                <span class="nav-icon">✓</span>
+                <span>Approvals</span>
+            </button>
+
+            <button class="nav" id="adminTab" type="button">
+                <span class="nav-icon">◫</span>
+                <span>Metrics</span>
+            </button>
+
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="system-status">
+                <span class="status-dot"></span>
+                AWS-powered workspace
+            </div>
+
+            <p>Single-workspace demo</p>
+            <small>No authentication enabled</small>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- HEADER -->
+        <header class="topbar">
+
+            <div>
+                <div class="breadcrumb">WORKSPACE / NEXORA AI</div>
+                <h1 id="heading">Ask your organization's knowledge</h1>
+                <p class="header-subtitle">
+                    Your AI-powered enterprise knowledge assistant
+                </p>
+            </div>
+
+            <div class="header-status">
+                <span class="status-dot"></span>
+                AWS Powered
+            </div>
+
+        </header>
+
+
+        <!-- CHAT VIEW -->
+        <section id="chatView" class="panel chat-panel">
+
+            <div class="chat-toolbar">
+                <div class="toolbar-label">
+                    <span class="chat-status-dot"></span>
+                    Knowledge Assistant
+                </div>
+
+                <button id="newChat" class="new-chat-btn" type="button">
+                    + New Conversation
+                </button>
+            </div>
+
+            <div class="hero">
+                <div class="hero-icon">✦</div>
+
+                <h2>What can I help you find?</h2>
+
+                <p>
+                    Ask questions about your organization's documents.
+                    Get intelligent answers grounded in your knowledge base.
+                </p>
+
+                <div class="suggestions">
+                    <button type="button"
+                        data-q="What is our leave policy?">
+                        Leave Policy ↗
+                    </button>
+
+                    <button type="button"
+                        data-q="Summarize the onboarding process">
+                        Onboarding ↗
+                    </button>
+
+                    <button type="button"
+                        data-q="What are the IT security rules?">
+                        IT Security ↗
+                    </button>
+                </div>
+            </div>
+
+            <div id="messages" aria-live="polite"></div>
+
+            <div class="composer-wrapper">
+
+                <form id="chatForm" class="composer">
+
+                    <textarea
+                        id="question"
+                        rows="2"
+                        minlength="3"
+                        maxlength="2000"
+                        placeholder="Ask anything about your company knowledge..."
+                        required
+                    ></textarea>
+
+                    <button type="submit" class="send-btn">
+                        Send ↗
+                    </button>
+
+                </form>
+
+                <p class="chat-disclaimer">
+                    Nexora AI may make mistakes. Verify important
+                    information using the cited documents.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- DOCUMENTS VIEW -->
+        <section id="docsView" class="panel hidden">
+
+            <div class="section-heading">
+                <div>
+                    <div class="section-tag">KNOWLEDGE BASE</div>
+                    <h2>Document Library</h2>
+
+                    <p>
+                        Manage the documents used by your AI assistant.
+                        Upload PDF, DOCX, or TXT files.
+                    </p>
+                </div>
+            </div>
+
+            <div class="upload-card">
+
+                <div class="upload-icon">▤</div>
+
+                <h3>Upload a document</h3>
+
+                <p>
+                    Your documents will be stored in Amazon S3,
+                    processed using Amazon Titan embeddings,
+                    and indexed in Pinecone.
+                </p>
+
+                <form id="uploadForm" class="upload-form">
+
+                    <input
+                        id="file"
+                        type="file"
+                        accept=".pdf,.docx,.txt"
+                        required
+                    >
+
+                    <button type="submit" class="primary-btn">
+                        Upload Document ↗
+                    </button>
+
+                </form>
+
+                <small>
+                    Maximum file size: 10 MB.
+                    Use non-sensitive demo documents only.
+                </small>
+
+            </div>
+
+            <div class="list-section">
+                <h3>Uploaded Documents</h3>
+                <div id="docs">Loading documents...</div>
+            </div>
+
+        </section>
+
+
+        <!-- APPROVALS VIEW -->
+        <section id="approvalView" class="panel hidden">
+
+            <div class="section-header">
+
+                <div>
+                    <div class="section-tag">HUMAN IN THE LOOP</div>
+                    <h2>Approval Requests</h2>
+
+                    <p>
+                        Review AI requests that require administrator
+                        approval before any action.
+                    </p>
+                </div>
+
+                <button type="button"
+                    id="refreshApprovals"
+                    class="secondary-btn">
+                    ↻ Refresh
+                </button>
+
+            </div>
+
+            <div class="info-banner">
+                <span>ⓘ</span>
+                Approvals record decisions only.
+                They do not automatically execute actions.
+            </div>
+
+            <div id="approvalSummary" role="status"></div>
+
+            <div id="approvalList" aria-live="polite"></div>
+
+        </section>
+
+
+        <!-- METRICS VIEW -->
+        <section id="adminView" class="panel hidden">
+
+            <div class="section-heading">
+                <div>
+                    <div class="section-tag">SYSTEM MONITORING</div>
+                    <h2>Workspace Metrics</h2>
+
+                    <p>
+                        Monitor document processing,
+                        feedback, and AI guardrail activity.
+                    </p>
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-card-header">
+                    <span class="metric-icon">◫</span>
+                    <h3>Application Metrics</h3>
+                </div>
+
+                <pre id="metrics">Loading metrics...</pre>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-card-header">
+                    <span class="metric-icon">◇</span>
+                    <h3>Guardrail Events</h3>
+                </div>
+
+                <pre id="guardrailMetrics">
+Loading guardrail metrics...
+                </pre>
+            </div>
+
+        </section>
+
+        <!-- NOTIFICATION -->
+        <div id="toast" role="status"></div>
+
+    </main>
+
+</div>
+
+<script src="/static/js/app.js?v=21"></script>
+
+</body>
+</html>
